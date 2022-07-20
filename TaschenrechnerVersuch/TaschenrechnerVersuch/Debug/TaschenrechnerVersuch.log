@@ -1,0 +1,2 @@
+﻿Taschenrechner.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: char __thiscall InputOutput::askAdd(void)" (?askAdd@InputOutput@@QAEDXZ)" in Funktion ""int __cdecl addition(void)" (?addition@@YAHXZ)".
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\Debug\TaschenrechnerVersuch.exe : fatal error LNK1120: 1 nicht aufgelöste Externe
