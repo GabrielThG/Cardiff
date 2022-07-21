@@ -10,12 +10,13 @@
 #include <vector>
 #include <fstream>
 using std::cout; using std::cerr;
+using std::cin;
 using std::endl; using std::string;
 using std::ifstream;
 
-bool is_number(const std::string& s)
+bool is_number(const string s)
 {
-	std::string::const_iterator it = s.begin();
+	string::const_iterator it = s.begin();
 	while (it != s.end() && std::isdigit(*it)) ++it;
 	return !s.empty() && it == s.end();
 }
@@ -33,7 +34,7 @@ bool checkCharDR(char x) {
 }
 char InputOutput::askMain() {
 	char auswahl;
-	cout << "Wollen Sie Taschenrechner oder Funktionsrechner (T/F) starten?" << std::endl;;
+	cout << "Wollen Sie Taschenrechner oder Funktionsrechner (T/F) starten?" << endl;;
 	cin >> auswahl;
 	if (checkCharTFN(auswahl))
 		return auswahl;
@@ -44,22 +45,22 @@ char InputOutput::askMain() {
 int InputOutput::askNumberMax(int begrenzung) {
 	bool weiter = true;
 	int zahl = 0;
-	std::string wort = "0";
+	string wort = "0";
 	while (weiter == 'j') {
-		cout << "Bitte geben Sie eine Zahl ein (bis max"<< begrenzung <<"):" << std::endl;
+		cout << "Bitte geben Sie eine Zahl ein (bis max"<< begrenzung <<"):" << endl;
 		cin >> wort;
 		if (is_number(wort)) {
 			zahl = stoi(wort);
 			if (zahl == 0 || zahl>begrenzung)
 			{
-				cout << "Bitte geben Sie eine gültige Zahl ein: " << std::endl;
+				cout << "Bitte geben Sie eine gültige Zahl ein: " << endl;
 				break;
 			}
 			weiter = false;
 			return zahl;
 		}
 		else {
-			std::cin.clear();
+			cin.clear();
 			weiter = true;
 		}
 	}
@@ -67,23 +68,23 @@ int InputOutput::askNumberMax(int begrenzung) {
 int InputOutput::askNumber() {
 	bool weiter = true;
 	int zahl = 0;
-	std::string wort = "0";
-	while (weiter == 'j') {
-		cout << "Bitte geben Sie eine Zahl ein:" << std::endl;
+	string wort = "0";
+	while (weiter == true) {
+		cout << "Bitte geben Sie eine Zahl ein:" << endl;
 		cin >> wort;
 		if (is_number(wort)) {
 			zahl = stoi(wort);
 			if (zahl == 0)
 			{
-				cout << "Bitte geben Sie eine gültige Zahl ein: " << std::endl;
+				cout << "Bitte geben Sie eine gültige Zahl ein: " << endl;
 				break;
 			}
 			weiter = false;
 			return zahl;
 		}
 		else {
-			std::cin.clear();
-			weiter =true;
+			cin.clear();
+			weiter = true;
 		}
 	}
 }
@@ -92,9 +93,9 @@ int InputOutput::askTROperation() {
 	int zahlOperator;
 	string wort;
 	while (weiter == true) {
-		cout << "Welche Rechenoperation soll durchgefuehrt werden? \n";
-		cout << "(1-Addieren, 2-Subtrahieren, 3-Multiplizieren, 4-Dividieren,\n";
-		cout << " 5-Modulo, 6-Potenzieren, 7-Wurzelziehen)";
+		cout << "Welche Rechenoperation soll durchgefuehrt werden?" << endl;
+		cout << "(1-Addieren, 2-Subtrahieren, 3-Multiplizieren, 4-Dividieren," << endl;
+		cout << " 5-Modulo, 6-Potenzieren, 7-Wurzelziehen)" << endl;
 		cin >> wort;
 		try {
 			zahlOperator = stoi(wort);
@@ -110,26 +111,26 @@ int InputOutput::askTROperation() {
 		}
 		catch (const std::exception& e)
 		{
-			cout << "Bitte geben Sie eine gueltige Zahl ein!" << std::endl;
-			std::cerr << e.what() << std::endl;
+			cout << "Bitte geben Sie eine gueltige Zahl ein!" << endl;
+			cerr << e.what() << endl;
 		}
 	}
 }
 void InputOutput::printError() {
-	cout << "Bitte eine gültige Zahl eingeben." << std::endl;;
+	cout << "Bitte eine gültige Zahl eingeben." << endl;;
 
 }
 void InputOutput::printErgebnis(float x) {
-	std::cout << "Dein Ergebnis ist: " << std::setprecision(2) << x << std::endl;
+	cout << "Dein Ergebnis ist: " << std::setprecision(2) << x << endl;
 }
 int InputOutput::askFROperation() {
 	bool weiter = true;
 	int zahlOperator;
-	std::string wort;
+	string wort;
 	ladenrechner(1, "Funktionsrechner startet ");
 	while (weiter == true) {
 		cout << "Welche Funktion soll durchgfuehrt?";
-		cout << "1-Faktoriell, 2-Catalan, 3-Kreisberechnung, ";
+		cout << "1-Faktoriell, 2-Catalan, 3-Kreisberechnung, " << endl;
 		cin >> wort;
 		try {
 			zahlOperator = stoi(wort);
@@ -145,14 +146,17 @@ int InputOutput::askFROperation() {
 		}
 		catch (const std::exception& e)
 		{
-			cout << "Bitte geben Sie eine gueltige Zahl ein!" << std::endl;
-			std::cerr << e.what() << std::endl;
+			cout << "Bitte geben Sie eine gueltige Zahl ein!" << endl;
+			cerr << e.what() << endl;
 		}
 	}
 }
+void printFileError() {
+	std::cout << "Bitte an erster Stelle des Files einen Operator eingeben!";
+}
 char InputOutput::askAgain() {
 	char weiter;
-	cout << "Wollen Sie nocheinmal zu Taschenrechner/Funktionsrechner? (T/F/N)";
+	cout << "Wollen Sie nocheinmal zu Taschenrechner/Funktionsrechner? (T/F/N)" << endl;
 	cin >> weiter;
 	if (checkCharTFN(weiter))
 		return weiter;
@@ -162,8 +166,8 @@ char InputOutput::askAgain() {
 char InputOutput::askDR() {
 	char kreisAuswahl;
 	bool weiter = true;
-	while (weiter == true) {
-	cout << "Durchmesser oder Radius? (D/R)";
+	while (weiter == true) { 
+	cout << "Durchmesser oder Radius? (D/R)" << endl;
 	cin >> kreisAuswahl;
 	if (checkCharDR(kreisAuswahl)) {
 		return kreisAuswahl;
@@ -171,14 +175,14 @@ char InputOutput::askDR() {
 	}
 	else{
 		cin.clear();
-		cout << "Bitte D, d, R oder r eingeben.";
+		cout << "Bitte D, d, R oder r eingeben." << endl;
 		weiter = true;
 		}
 	}
 }
-char askAdd() {
-	char auswahl;
-	cout << "Über das Terminal oder File einlesen? (T/F)";
+char askMethode() {
+	char auswahl ='n';
+	cout << "Über das Terminal oder File einlesen? (T/F)" << endl;
 	cin >> auswahl;
 	if (checkCharTFN(auswahl)) {
 		return auswahl;
@@ -187,45 +191,7 @@ char askAdd() {
 		return 'n';
 	}
 }
-//vector<int> InputOutput::makeVectorT() {
-//	vector<int> vec;
-//	int zahl;
-//	char weiter = 'j';
-//	cout << "Geben Sie eine Zahl ein: ";
-//	cin >> zahl;
-//	while (weiter == 'j') {
-//		string wort;
-//		int zahl1;
-//		cout << "Geben Sie eine weitere Zahl ein(#/n): ";
-//		cin >> wort;
-//		if (is_number(wort)) {
-//			zahl1 = stoi(wort);
-//			weiter = 'j';
-//		}
-//		else {
-//			weiter = 'j';
-//			break;
-//		}
-//		vec.push_back(zahl1);
-//	}
-//	return vec;
-//}
-//vector<int> InputOutput::makeVectorF() {
-//	vector<int> vec;
-//	string filename("input.txt");
-//	int number;
-//	ifstream input_file(filename);
-//	if (!input_file.is_open()) {
-//		cerr << "Could not open the file - '" << filename << "'" << endl;
-//		return vec;
-//	}
-//	while (input_file >> number) {
-//		vec.push_back(number);
-//	}
-//	cout << endl;
-//	input_file.close();
-//	return vec;
-//}
+
 
 
 	

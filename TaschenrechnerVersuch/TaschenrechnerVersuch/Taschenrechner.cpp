@@ -13,53 +13,28 @@ bool checkIfZero(float x) {
     else
         return true;
 }
-int addieren(std::vector<int> vec) {
+int vecAdd(std::vector<int> vec) {
     int zahlErg=1;
-    cout << "Output of begin and end: ";
-    for (auto i = vec.begin(); i != vec.end(); ++i)
+    for (auto i = vec.begin()+1; i != vec.end(); ++i)
         zahlErg += *i;
     return zahlErg;
 }
-int addition() {
-    char auswahl;
-    int zahlErg =0;
-    InputOutput io;
-    auswahl = io.askAdd();
-    switch (auswahl) {
-    case 'T':
-    case 't':
-        cout << "makeVectorFromTextForAdd";
-//        zahlErg = addieren(makeVectorT());
-        break;
-    case 'F':
-    case 'f':
-        cout << "makeVectorFromFileForAdd";
-//        zahlErg = addieren(makeVectorF());
-        break;
-    }
+int vecSub(std::vector<int> vec) {
+    int zahlErg = 1;
+    for (auto i = vec.begin() + 1; i != vec.end(); ++i)
+        zahlErg -= *i;
     return zahlErg;
 }
-int multiplizieren(std::vector<int> vec) {
-    int zahlErg=1;
-    for (auto i = vec.begin(); i != vec.end(); ++i)
+int vecMul(std::vector<int> vec) {
+    int zahlErg = 1;
+    for (auto i = vec.begin() + 1; i != vec.end(); ++i)
         zahlErg *= *i;
     return zahlErg;
 }
-int multiplikation() {
-    char auswahl;
-    InputOutput io;
-    int zahlErg=0;
-    auswahl = io.askAdd();
-    switch (auswahl) {
-    case 'T':
-    case 't':
-        cout << "makeVectorFromTextForMulti";
-//        zahlErg = multiplikation(makeVectorT());
-    case 'F':
-    case 'f':
-        cout << "makeVectorFromFileForMulti";
-//        zahlErg = multiplikation(makeVectorF());
-    }
+int vecDiv(std::vector<int> vec) {
+    int zahlErg = 1;
+    for (auto i = vec.begin() + 1; i != vec.end(); ++i)
+        zahlErg /= *i;
     return zahlErg;
 }
 float bigSwitch(int zahlOperator) {
@@ -68,7 +43,9 @@ float bigSwitch(int zahlOperator) {
     int zahl1, zahl2, erg;
     switch (zahlOperator) {
     case 1:
-        zahlErg = addition();
+        zahl1 = io.askNumber();
+        zahl2 = io.askNumber();
+        zahlErg = zahl1 + zahl2;
         break;
     case 2:
         zahl1 = io.askNumber();
@@ -76,7 +53,9 @@ float bigSwitch(int zahlOperator) {
         zahlErg = zahl1 - zahl2;
         break;
     case 3:
-        zahlErg = multiplikation();
+        zahl1 = io.askNumber();
+        zahl2 = io.askNumber();
+        zahlErg = zahl1 * zahl2;
         break;
     case 4:
         zahl1 = io.askNumber();
@@ -84,7 +63,7 @@ float bigSwitch(int zahlOperator) {
         if (checkIfZero(zahl2))
             zahlErg = zahl1 / zahl2;
         else
-            std::cout << "Ungueltige Eingabe!";
+            cout << "Ungueltige Eingabe!";
         break;
     case 5:
         zahl1 = io.askNumber();
@@ -109,11 +88,9 @@ float bigSwitch(int zahlOperator) {
 }
 void Taschenrechner::TRBerechnen() {
     InputOutput io;
-    char auswahl;
-    float zahlErg = 0, fzahl1, fzahl2;
-    int zahlOperator, zahl1, zahl2, erg;
+    float zahlErg = 0;
+    int zahlOperator;
     ladenrechner(1, "Taschenrechner startet ");
-    err:
     zahlOperator= io.askTROperation();
     zahlErg = bigSwitch(zahlOperator);
     io.printErgebnis(zahlErg);
