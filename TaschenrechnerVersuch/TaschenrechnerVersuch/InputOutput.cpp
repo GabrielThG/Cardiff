@@ -9,17 +9,12 @@
 #include <string> 
 #include <vector>
 #include <fstream>
+#include "Filerechner.h"
 using std::cout; using std::cerr;
 using std::cin;
 using std::endl; using std::string;
 using std::ifstream;
 
-bool is_number(const string s)
-{
-	string::const_iterator it = s.begin();
-	while (it != s.end() && std::isdigit(*it)) ++it;
-	return !s.empty() && it == s.end();
-}
 bool checkCharTFN(char x) {
 	if (x == 'T' || 't' || 'F' || 'f' || 'N' || 'n')
 		return true;
@@ -151,7 +146,7 @@ int InputOutput::askFROperation() {
 		}
 	}
 }
-void printFileError() {
+void InputOutput::printFileError() {
 	std::cout << "Bitte an erster Stelle des Files einen Operator eingeben!";
 }
 char InputOutput::askAgain() {

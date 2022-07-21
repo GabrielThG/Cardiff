@@ -13,30 +13,6 @@ bool checkIfZero(float x) {
     else
         return true;
 }
-int vecAdd(std::vector<int> vec) {
-    int zahlErg=1;
-    for (auto i = vec.begin()+1; i != vec.end(); ++i)
-        zahlErg += *i;
-    return zahlErg;
-}
-int vecSub(std::vector<int> vec) {
-    int zahlErg = 1;
-    for (auto i = vec.begin() + 1; i != vec.end(); ++i)
-        zahlErg -= *i;
-    return zahlErg;
-}
-int vecMul(std::vector<int> vec) {
-    int zahlErg = 1;
-    for (auto i = vec.begin() + 1; i != vec.end(); ++i)
-        zahlErg *= *i;
-    return zahlErg;
-}
-int vecDiv(std::vector<int> vec) {
-    int zahlErg = 1;
-    for (auto i = vec.begin() + 1; i != vec.end(); ++i)
-        zahlErg /= *i;
-    return zahlErg;
-}
 float bigSwitch(int zahlOperator) {
     InputOutput io;
     float zahlErg = 0, fzahl1=0, fzahl2=0;
