@@ -58,7 +58,7 @@ std::vector<std::string> makeVectorF() {
     input_file.close();
     return vec;
 }
-void fileBerechnen() {
+void Filerechner::fileBerechnen() {
     InputOutput io;
     int zahlErg;
     char zahlOperator;
@@ -88,6 +88,15 @@ void fileBerechnen() {
         zahlErg = vecDiv(ivec);
         break;
     }
-    std::cout << "Das Ergebnis ist " << zahlErg << std::endl;
+ 
+    std::ofstream myfile("output.txt");
+    if (myfile.is_open())
+    {
+        myfile << "Das Ergebnis ist: ";
+        myfile << zahlErg;
+        
+        myfile.close();
+    }
+    else std::cout << "Unable to open file";
 }
 
