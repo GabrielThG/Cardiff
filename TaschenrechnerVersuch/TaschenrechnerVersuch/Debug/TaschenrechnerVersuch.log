@@ -1,21 +1,14 @@
-﻿  Filerechner.cpp
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Filerechner.cpp(74,23): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-  Taschenrechner.cpp
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(48,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(53,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(58,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(63,25): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(64,29): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(71,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(76,22): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(81,22): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(43,23): warning C4101: "erg": Unreferenzierte lokale Variable
-  Code wird generiert...
+﻿  Taschenrechner.cpp
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(24,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(29,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(34,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(39,25): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(40,29): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(47,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(52,22): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(57,22): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(19,23): warning C4101: "erg": Unreferenzierte lokale Variable
 InputOutput.obj : error LNK2005: "bool __cdecl is_number(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?is_number@@YA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) ist bereits in Filerechner.obj definiert.
-Taschenrechner.obj : error LNK2005: "int __cdecl vecAdd(class std::vector<int,class std::allocator<int> >)" (?vecAdd@@YAHV?$vector@HV?$allocator@H@std@@@std@@@Z) ist bereits in Filerechner.obj definiert.
-Taschenrechner.obj : error LNK2005: "int __cdecl vecDiv(class std::vector<int,class std::allocator<int> >)" (?vecDiv@@YAHV?$vector@HV?$allocator@H@std@@@std@@@Z) ist bereits in Filerechner.obj definiert.
-Taschenrechner.obj : error LNK2005: "int __cdecl vecMul(class std::vector<int,class std::allocator<int> >)" (?vecMul@@YAHV?$vector@HV?$allocator@H@std@@@std@@@Z) ist bereits in Filerechner.obj definiert.
-Taschenrechner.obj : error LNK2005: "int __cdecl vecSub(class std::vector<int,class std::allocator<int> >)" (?vecSub@@YAHV?$vector@HV?$allocator@H@std@@@std@@@Z) ist bereits in Filerechner.obj definiert.
 Filerechner.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: void __thiscall InputOutput::printFileError(void)" (?printFileError@InputOutput@@QAEXXZ)" in Funktion ""void __cdecl fileBerechnen(void)" (?fileBerechnen@@YAXXZ)".
 Menu.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: void __thiscall Filerechner::fileBerechnen(void)" (?fileBerechnen@Filerechner@@QAEXXZ)" in Funktion ""public: __thiscall Menu::Menu(void)" (??0Menu@@QAE@XZ)".
 D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\Debug\TaschenrechnerVersuch.exe : fatal error LNK1120: 2 nicht aufgelöste Externe

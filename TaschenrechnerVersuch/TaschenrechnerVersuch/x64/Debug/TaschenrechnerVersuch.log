@@ -1,0 +1,29 @@
+﻿  Filerechner.cpp
+  Funktionsrechner.cpp
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Funktionsrechner.cpp(22,20): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Funktionsrechner.cpp(29,19): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Funktionsrechner.cpp(33,19): warning C4244: "=": Konvertierung von "double" in "int", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Funktionsrechner.cpp(66,14): warning C4244: "=": Konvertierung von "float" in "int", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Funktionsrechner.cpp(38,15): warning C4101: "zahlErg": Unreferenzierte lokale Variable
+  InputOutput.cpp
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(50,19): warning C4806: "==": unsichere Operation: kein Wert vom Typ "bool" erweitert auf Typ "char" kann mit der angegebenen Konstante übereinstimmen
+  Menu.cpp
+  Taschenrechner.cpp
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(24,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(29,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(34,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(39,25): warning C4244: "Argument": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(40,29): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(47,25): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(52,22): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(57,22): warning C4244: "=": Konvertierung von "double" in "float", möglicher Datenverlust
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\Taschenrechner.cpp(19,23): warning C4101: "erg": Unreferenzierte lokale Variable
+  Code wird generiert...
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(91): warning C4715: "InputOutput::askNumber": Nicht alle Codepfade geben einen Wert zurück.
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(68): warning C4715: "InputOutput::askNumberMax": Nicht alle Codepfade geben einen Wert zurück.
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(119): warning C4715: "InputOutput::askTROperation": Nicht alle Codepfade geben einen Wert zurück.
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(154): warning C4715: "InputOutput::askFROperation": Nicht alle Codepfade geben einen Wert zurück.
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(183): warning C4715: "InputOutput::askDR": Nicht alle Codepfade geben einen Wert zurück.
+InputOutput.obj : error LNK2005: "bool __cdecl is_number(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?is_number@@YA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) ist bereits in Filerechner.obj definiert.
+Menu.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: void __cdecl Filerechner::fileBerechnen(void)" (?fileBerechnen@Filerechner@@QEAAXXZ)" in Funktion ""public: __cdecl Menu::Menu(void)" (??0Menu@@QEAA@XZ)".
+D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\x64\Debug\TaschenrechnerVersuch.exe : fatal error LNK1120: 1 nicht aufgelöste Externe

@@ -8,7 +8,6 @@ public:
 
 	char askDR();
 	char askAgain();
-	char askAdd();
 	char askMain();
 	char askMethode();
 	

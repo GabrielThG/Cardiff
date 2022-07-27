@@ -58,7 +58,7 @@ std::vector<std::string> makeVectorF() {
     input_file.close();
     return vec;
 }
-void Filerechner::fileBerechnen() {
+void fileBerechnen() {
     InputOutput io;
     int zahlErg;
     char zahlOperator;
@@ -90,3 +90,4 @@ void Filerechner::fileBerechnen() {
     }
     std::cout << "Das Ergebnis ist " << zahlErg << std::endl;
 }
+

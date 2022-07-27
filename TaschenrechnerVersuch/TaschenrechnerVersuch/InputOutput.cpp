@@ -15,6 +15,12 @@ using std::cin;
 using std::endl; using std::string;
 using std::ifstream;
 
+bool is_number(const string s)
+{
+	string::const_iterator it = s.begin();
+	while (it != s.end() && std::isdigit(*it)) ++it;
+	return !s.empty() && it == s.end();
+}
 bool checkCharTFN(char x) {
 	if (x == 'T' || 't' || 'F' || 'f' || 'N' || 'n')
 		return true;
@@ -175,7 +181,7 @@ char InputOutput::askDR() {
 		}
 	}
 }
-char askMethode() {
+char InputOutput::askMethode() {
 	char auswahl ='n';
 	cout << "Über das Terminal oder File einlesen? (T/F)" << endl;
 	cin >> auswahl;
