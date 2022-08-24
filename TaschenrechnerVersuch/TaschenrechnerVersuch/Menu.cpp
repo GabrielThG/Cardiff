@@ -28,8 +28,14 @@ Menu::Menu() {
             break;
         case 'G':
         case 'g':
-            file.fileBerechnen();
+            file.makeVectorF();
             break;
+        case 'M':
+        case 'm':
+            file.makeFile();
+        case 'S':
+        case 's':
+            std::cout << "Sortierfunktion kommt bald" << std::endl;
         }
 
         auswahl = io.askAgain();

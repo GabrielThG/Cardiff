@@ -15,14 +15,8 @@ using std::cin;
 using std::endl; using std::string;
 using std::ifstream;
 
-bool is_number(const std::string s)
-{
-	std::string::const_iterator it = s.begin();
-	while (it != s.end() && std::isdigit(*it)) ++it;
-	return !s.empty() && it == s.end();
-}
 bool checkCharTFN(char x) {
-	if (x == 'T' || 't' || 'F' || 'f' || 'N' || 'n')
+	if (x == 'T' || 't' || 'F' || 'f' || 'N' || 'n' || 'G' || 'g' || 'S' || 's')
 		return true;
 	else
 		return false;
@@ -35,7 +29,7 @@ bool checkCharDR(char x) {
 }
 char InputOutput::askMain() {
 	char auswahl;
-	cout << "Wollen Sie Taschenrechner oder Funktionsrechner (T/F) starten?" << endl;;
+	cout << "Wollen Sie Taschenrechner oder Funktionsrechner (T/F/G/S/N) starten? (T --> Taschenrechner, F --> Funktionsrechner, G --> aus File berechnen, S --> Sortieren aus anderen File)" << endl;;
 	cin >> auswahl;
 	if (checkCharTFN(auswahl))
 		return auswahl;
@@ -157,7 +151,7 @@ void InputOutput::printFileError() {
 }
 char InputOutput::askAgain() {
 	char weiter;
-	cout << "Wollen Sie nocheinmal zu Taschenrechner/Funktionsrechner? (T/F/N)" << endl;
+	cout << "Wollen Sie nocheinmal zu Taschenrechner/Funktionsrechner? (T/F/G/N)" << endl;
 	cin >> weiter;
 	if (checkCharTFN(weiter))
 		return weiter;

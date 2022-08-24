@@ -66,7 +66,7 @@ void Funktionsrechner::FRBerechnen() {
 			A = flache(r);
 			U = umfang(r);
 			cout << "Deine Fäche ist: " << setprecision(2) << flache(r) << endl;
-			cout << "Dein Umfang ist:" << umfang(r) << endl;
+			cout << "Dein Umfang ist: " << umfang(r) << endl;
 			break;
 		}
 		break;

@@ -1,12 +1,2 @@
 ﻿  Filerechner.cpp
-  InputOutput.cpp
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(50,19): warning C4806: "==": unsichere Operation: kein Wert vom Typ "bool" erweitert auf Typ "char" kann mit der angegebenen Konstante übereinstimmen
-  Menu.cpp
-  Code wird generiert...
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(68): warning C4715: "InputOutput::askNumberMax": Nicht alle Codepfade geben einen Wert zurück.
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(91): warning C4715: "InputOutput::askNumber": Nicht alle Codepfade geben einen Wert zurück.
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(119): warning C4715: "InputOutput::askTROperation": Nicht alle Codepfade geben einen Wert zurück.
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(154): warning C4715: "InputOutput::askFROperation": Nicht alle Codepfade geben einen Wert zurück.
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\TaschenrechnerVersuch\InputOutput.cpp(183): warning C4715: "InputOutput::askDR": Nicht alle Codepfade geben einen Wert zurück.
-InputOutput.obj : error LNK2005: "bool __cdecl is_number(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?is_number@@YA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) ist bereits in Filerechner.obj definiert.
-D:\WMS Cardiff\Übungsprojekte\TaschenrechnerVersuch\x64\Debug\TaschenrechnerVersuch.exe : fatal error LNK1169: Mindestens ein mehrfach definiertes Symbol gefunden.
+  TaschenrechnerVersuch.vcxproj -> C:\Users\glaser3\Downloads\Cardiff-main\Cardiff-main\TaschenrechnerVersuch\x64\Debug\TaschenrechnerVersuch.exe
