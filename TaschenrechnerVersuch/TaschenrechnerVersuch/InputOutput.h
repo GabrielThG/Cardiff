@@ -15,4 +15,7 @@ public:
 	int askNumber();
 	int askTROperation();
 	int askFROperation();
+
+	double askEcken();
+	double askSeite();
 };

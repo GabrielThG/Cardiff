@@ -52,7 +52,7 @@ void Funktionsrechner::FRBerechnen() {
 		switch (kreisAuswahl) {
 		case 'D':
 		case 'd':
-			cout << "Durchmesser: ";
+			cout << "Durchmesser eingeben: ";
 			cin >> d;
 			r = d / 2;
 			
@@ -61,7 +61,7 @@ void Funktionsrechner::FRBerechnen() {
 			break;
 		case 'R':
 		case 'r':
-			cout << "Radius: ";
+			cout << "Radius eingeben: ";
 			cin >> r;
 			A = flache(r);
 			U = umfang(r);

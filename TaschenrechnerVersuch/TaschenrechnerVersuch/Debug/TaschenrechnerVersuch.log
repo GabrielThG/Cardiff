@@ -1,5 +1,2 @@
-﻿  Filerechner.cpp
-C:\Users\glaser3\Downloads\Cardiff-main\Cardiff-main\TaschenrechnerVersuch\TaschenrechnerVersuch\Filerechner.cpp(98,27): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-C:\Users\glaser3\Downloads\Cardiff-main\Cardiff-main\TaschenrechnerVersuch\TaschenrechnerVersuch\Filerechner.cpp(125,23): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
-Menu.obj : error LNK2019: Verweis auf nicht aufgelöstes externes Symbol ""public: void __thiscall Filerechner::makeFile(void)" (?makeFile@Filerechner@@QAEXXZ)" in Funktion ""public: __thiscall Menu::Menu(void)" (??0Menu@@QAE@XZ)".
-C:\Users\glaser3\Downloads\Cardiff-main\Cardiff-main\TaschenrechnerVersuch\Debug\TaschenrechnerVersuch.exe : fatal error LNK1120: 1 nicht aufgelöste Externe
+﻿  Menu.cpp
+  TaschenrechnerVersuch.vcxproj -> D:\WMS Cardiff\Übungsprojekte\Cardiff-main\Cardiff-main\TaschenrechnerVersuch\Debug\TaschenrechnerVersuch.exe

@@ -4,40 +4,39 @@
 #include <iostream>
 #include "InputOutput.h"
 #include "Filerechner.h"
+#include "GleichseitigesVieleck.h"
 
 
 
 
 Menu::Menu() {
-    
+
     InputOutput io;
     Taschenrechner TR;
     Funktionsrechner FR;
     Filerechner file;
-    
+    GleichseitigesVieleck vieleck;
+
     char auswahl = io.askMain();
-        while (auswahl!='n') {
+    while (auswahl != 'n') {
         switch (auswahl) {
+        default:
+            break;
         case 'T':
-        case 't':
             TR.TRBerechnen();
             break;
         case 'F':
-        case 'f':
             FR.FRBerechnen();
             break;
-        case 'G':
-        case 'g':
+        case 'M':
             file.makeVectorF();
             break;
-        case 'M':
-        case 'm':
-            file.makeFile();
-        case 'S':
-        case 's':
-            std::cout << "Sortierfunktion kommt bald" << std::endl;
-        }
-
+        case 'K':
+            vieleck.gsVieleck();
+            break;
+        }    
         auswahl = io.askAgain();
     }
+    
 }
+

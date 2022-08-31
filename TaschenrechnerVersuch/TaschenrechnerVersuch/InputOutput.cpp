@@ -29,7 +29,8 @@ bool checkCharDR(char x) {
 }
 char InputOutput::askMain() {
 	char auswahl;
-	cout << "Wollen Sie Taschenrechner oder Funktionsrechner (T/F/G/S/N) starten? (T --> Taschenrechner, F --> Funktionsrechner, G --> aus File berechnen, S --> Sortieren aus anderen File)" << endl;;
+	cout << "Wollen Sie Taschenrechner oder Funktionsrechner (T/F/G/S/N) starten?" << endl;
+	cout << "(T->Taschenrechner, F->Funktionsrechner, M->aus File berechnen, K->regelm‰ﬂiges Vieleck)" << endl;;
 	cin >> auswahl;
 	if (checkCharTFN(auswahl))
 		return auswahl;
@@ -186,7 +187,29 @@ char InputOutput::askMethode() {
 		return 'n';
 	}
 }
-
+double InputOutput::askEcken() {
+	double ecken =0;
+	try {
+		cout << "Anzahl der Ecken?" << endl;
+		cin >> ecken;
+	}
+	catch (exception e) {
+		cout << "Error: " ,e;
+	}
+	return ecken;
+	
+}
+double InputOutput::askSeite() {
+	double seiten = 0;
+	try {
+		cout << "Laenge der Seiten: " << endl;
+		cin >> seiten;
+	}
+	catch (exception e) {
+		cout << "Error: ", e;
+	}
+	return seiten;
+}
 
 
 	
