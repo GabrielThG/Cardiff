@@ -1,0 +1,11 @@
+D:\WMS Cardiff\downloads\KCC10-csharp\bin\Debug\input\warehouse-characteristics.properties
+D:\WMS Cardiff\downloads\KCC10-csharp\bin\Debug\input\orders.csv
+D:\WMS Cardiff\downloads\KCC10-csharp\bin\Debug\input\product-inqueue.csv
+D:\WMS Cardiff\downloads\KCC10-csharp\bin\Debug\input\products.csv
+D:\WMS Cardiff\downloads\KCC10-csharp\bin\Debug\KCC2022.exe.config
+D:\WMS Cardiff\downloads\KCC10-csharp\bin\Debug\KCC2022.exe
+D:\WMS Cardiff\downloads\KCC10-csharp\bin\Debug\KCC2022.pdb
+D:\WMS Cardiff\downloads\KCC10-csharp\obj\Debug\KCC2022.csproj.CoreCompileInputs.cache
+D:\WMS Cardiff\downloads\KCC10-csharp\obj\Debug\KCC2022.exe
+D:\WMS Cardiff\downloads\KCC10-csharp\obj\Debug\KCC2022.pdb
+D:\WMS Cardiff\downloads\KCC10-csharp\obj\Debug\KCC2022.csprojAssemblyReference.cache
